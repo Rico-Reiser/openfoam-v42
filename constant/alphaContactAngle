@@ -1,0 +1,17 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      alphaContactAngle;
+}
+
+top
+{
+    type        alphaContactAngle;
+    theta0      uniform 100;       
+    limit       gradient;
+    value       uniform 0;
+}
+
+
