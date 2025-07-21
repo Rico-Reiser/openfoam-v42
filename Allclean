@@ -1,0 +1,26 @@
+
+echo ">>> Cleaning case directory..."
+
+
+rm -rf [1-9]*
+
+
+rm -rf constant/polyMesh
+
+
+rm -rf processor*
+
+
+rm -rf postProcessing
+
+
+rm -f log.*
+
+
+if [ -d "0.org" ]; then
+    echo ">>> Restoring original 0 directory from 0.org"
+    rm -rf 0
+    cp -r 0.org 0
+fi
+
+echo ">>> Clean complete."
