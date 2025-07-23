@@ -27,14 +27,7 @@ boundaryField
         type            fixedValue;
         value           uniform 1;   
     }
-    top
-    {
-        type            contactAngle;
-        theta0          90;
-        uTheta          uniform 0;
-        value           uniform 0;
-        limit           gradient;
-    }
+    
 
     walls
     {

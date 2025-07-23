@@ -1,11 +1,3 @@
-/*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2012                                 |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
-|    \\/     M anipulation  |                                                 |
-\*---------------------------------------------------------------------------*/
-
 FoamFile
 {
     version     2.0;
@@ -31,8 +23,8 @@ divSchemes
 {
     div(rhoPhi,U)                      Gauss linearUpwind grad(U);
     div(phi,U)                         Gauss linearUpwind grad(U);    
-    div(phi,alpha)                     Gauss vanLeer;
-    div(phirb,alpha)                   Gauss interfaceCompression;
+    div(phi,alpha)                     Gauss vanLeer;                 
+    div(phirb,alpha)                   Gauss interfaceCompression;   
     div(phi,k)                         Gauss upwind;
     div(phi,epsilon)                   Gauss upwind;
     div((nuEff*dev(T(grad(U)))))       Gauss linear;

@@ -58,15 +58,17 @@ solvers
         maxIter         100;
     }
 
-    alpha.water
-    {
-        solver          smoothSolver;
-        smoother        symGaussSeidel;
-        tolerance       1e-8;
-        relTol          0;
-        nAlphaCorr      1;             
-        nAlphaSubCycles 1;              
-    }
+   alpha.water
+{
+    solver          smoothSolver;
+    smoother        symGaussSeidel;
+    tolerance       1e-8;
+    relTol          1e-3;          
+    nAlphaCorr      2;            
+    nAlphaSubCycles 2;            
+    cAlpha          0.7;           
+}
+
 
     U
     {
@@ -88,7 +90,7 @@ solvers
 PIMPLE
 {
     momentumPredictor        yes;
-    nCorrectors              1;
+    nCorrectors              2;
     pRefCell                 0;
     pRefValue                0;
 }
@@ -102,6 +104,6 @@ relaxationFactors
     equations
     {
         U           0.7;
-        alpha.water 0.7;
+        alpha.water 0.5;
     }
 }

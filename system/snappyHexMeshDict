@@ -37,11 +37,7 @@ geometry
         type triSurfaceMesh;
         file "outlet.stl";
     }
-     top
-    {
-        type triSurfaceMesh;
-        file "top.stl";
-    }
+    
 
     box1
     {
@@ -60,8 +56,8 @@ geometry
 
 castellatedMeshControls
 {
-    maxLocalCells        750000;
-    maxGlobalCells       1400000;
+    maxLocalCells        100000;
+    maxGlobalCells       200000;
     minRefinementCells   10;
     maxLoadUnbalance     0.10;
     nCellsBetweenLevels  3;
@@ -81,10 +77,7 @@ castellatedMeshControls
             file "walls.extendedFeatureEdgeMesh";
             level 1;
         }
-        {
-            file "top.extendedFeatureEdgeMesh";
-            level 3;
-        });
+       );
 
     resolveFeatureAngle 30;
 
@@ -92,20 +85,17 @@ castellatedMeshControls
     {
         walls
         {
-            level (1 2);
+            level (1 1);
         }
         inlet
         {
-            level (1 1);
+            level (1 2);
         }
         outlet
         {
             level (1 1);
         }
-        top
-        {
-            level (2 3);
-        }
+        
     }
 
     refinementRegions
@@ -147,7 +137,7 @@ addLayersControls
     {
         walls
         {
-            nSurfaceLayers 3;
+            nSurfaceLayers 2;
         }
     }
     expansionRatio        1.2;

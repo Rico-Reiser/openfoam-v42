@@ -20,8 +20,8 @@ phases (water air);
 water
 {
     transportModel  Newtonian;
-    nu              1-06;   
-    rho             1000;       
+    nu              4.1e-06;   
+    rho             1130;       
 }
 
 air

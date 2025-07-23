@@ -6,12 +6,6 @@ FoamFile
     object      alphaContactAngle;
 }
 
-top
-{
-    type        alphaContactAngle;
-    theta0      uniform 100;       
-    limit       gradient;
-    value       uniform 0;
-}
+
 
 

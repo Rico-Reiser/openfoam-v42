@@ -1,10 +1,3 @@
-/*--------------------------------*- C++ -*----------------------------------*\\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v2012                                 |
-|   \\  /    A nd           | Website:  www.openfoam.com                      |
-|    \\/     M anipulation  |                                                 |
-\*---------------------------------------------------------------------------*/
 FoamFile
 {
     version     2.0;
@@ -23,15 +16,17 @@ stopAt          endTime;
 endTime         40;
 
 deltaT          0.05;
-maxDeltaT       0.1;      
-maxCo           0.8;      
+maxDeltaT       0.2;      
+
+maxCo           1.2;       
 maxAlphaCo      1.0;
 
 adjustTimeStep  yes;
 
 writeControl    runTime;
-writeInterval   0.3;      
-purgeWrite      0;        
+writeInterval   0.3;
+
+purgeWrite      0;
 
 writeFormat     ascii;
 writePrecision  6;

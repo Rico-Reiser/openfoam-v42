@@ -28,11 +28,7 @@ boundaryField
         value           uniform 0;
     }
 
-    top
-    {
-        type            fixedFluxPressure;
-        value           uniform 0;
-    }
+
 
     walls
     {

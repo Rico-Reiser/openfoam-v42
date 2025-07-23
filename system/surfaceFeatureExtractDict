@@ -1,0 +1,55 @@
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      surfaceFeatureExtractDict;
+}
+
+surfaces
+(
+    walls.stl
+    inlet.stl
+    top.stl
+    outlet.stl
+);
+
+inlet.stl
+{
+    extractionMethod    extractFromSurface;
+
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   45;
+    }
+
+    writeObj yes;
+}
+
+walls.stl
+{
+    extractionMethod    extractFromSurface;
+
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   45;
+    }
+
+    writeObj yes;
+}
+
+outlet.stl
+{
+    extractionMethod    extractFromSurface;
+
+
+    extractFromSurfaceCoeffs
+    {
+        includedAngle   45;
+    }
+
+    writeObj yes;
+}
