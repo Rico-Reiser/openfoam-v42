@@ -28,7 +28,7 @@ boundaryField
         value           uniform 0;
     }
 
-    bottomWall
+    top
     {
         type            fixedFluxPressure;
         value           uniform 0;

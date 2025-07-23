@@ -25,12 +25,7 @@ boundaryField
     inlet
     {
         type            fixedValue;
-        value           uniform (0 0 -0.003); 
-    }
-
-    top
-    {
-        type            noSlip;
+        value           uniform (0 0 -0.001); 
     }
 
     walls
@@ -42,6 +37,12 @@ boundaryField
         type            zeroGradient;
 
     }
+    top
+    {
+        type            zeroGradient;
+
+    }
+
 }
 
 // ************************************************************************* //

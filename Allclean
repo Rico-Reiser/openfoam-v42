@@ -17,10 +17,10 @@ rm -rf postProcessing
 rm -f log.*
 
 
-if [ -d "0.org" ]; then
-    echo ">>> Restoring original 0 directory from 0.org"
+if [ -d "0.orig" ]; then
+    echo ">>> Restoring original 0 directory from 0.orig"
     rm -rf 0
-    cp -r 0.org 0
+    cp -r 0.orig 0
 fi
 
 echo ">>> Clean complete."

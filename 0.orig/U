@@ -28,11 +28,6 @@ boundaryField
         value           uniform (0 0 -0.001); 
     }
 
-    bottomWall
-    {
-        type            noSlip;
-    }
-
     walls
     {
         type            noSlip;
@@ -42,6 +37,12 @@ boundaryField
         type            zeroGradient;
 
     }
+    top
+    {
+        type            zeroGradient;
+
+    }
+
 }
 
 // ************************************************************************* //
