@@ -37,12 +37,6 @@ boundaryField
         type            zeroGradient;
 
     }
-    top
-    {
-        type            zeroGradient;
-
-    }
-
 }
 
 // ************************************************************************* //
